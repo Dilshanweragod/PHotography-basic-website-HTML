@@ -1,0 +1,260 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Through My Lens
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <style>
+   body {
+            font-family: 'Roboto', sans-serif;
+            color: #333;
+        }
+        .hero {
+            position: relative;
+            height: 100vh;
+            background: url('https://placehold.co/1920x1080') no-repeat center center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+        .hero h1 {
+            font-size: 4rem;
+            margin: 0;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .hero p {
+            font-size: 1.5rem;
+            animation: fadeIn 3s ease-in-out;
+        }
+        .nav {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 20px;
+        }
+        .nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition: transform 0.3s;
+        }
+        .nav a:hover {
+            transform: scale(1.1);
+        }
+        .gallery {
+            padding: 50px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.3s;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        .about, .services, .contact {
+            padding: 50px;
+            text-align: center;
+        }
+        .about img, .services img {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto 20px;
+        }
+        .contact form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .contact input, .contact textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+        }
+        .contact button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .contact button:hover {
+            background-color: #555;
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .footer a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+  </style>
+ </head>
+ <body>
+  <div class="hero">
+   <div class="nav">
+    <a href="#portfolio">
+     Portfolio
+    </a>
+    <a href="#about">
+     About
+    </a>
+    <a href="#services">
+     Services
+    </a>
+    <a href="#contact">
+     Contact
+    </a>
+   </div>
+   <div>
+    <h1>
+     Welcome to My Visual Journey
+    </h1>
+    <p>
+     Discover Moments Captured Through My Lens
+    </p>
+   </div>
+  </div>
+  <div class="gallery" id="portfolio">
+   <img alt="A breathtaking landscape of mountains during sunset" height="400" src="https://storage.googleapis.com/a1aa/image/x35IUdxgj6bmNleqfAtAAqAuWaLWe2tytg6BwVyKimMDBThnA.jpg" width="600"/>
+   <img alt="A close-up portrait of a person with expressive eyes" height="400" src="https://storage.googleapis.com/a1aa/image/iSd950bYhZY8LVZEeerxuKfsJI4QxQTLICjPbJVF161pAThnA.jpg" width="600"/>
+   <img alt="A vibrant cityscape at night with lights reflecting on water" height="400" src="https://storage.googleapis.com/a1aa/image/4Rw6pF5YUD4YD5XBaZ1EkughYHSJBTeNeJRuyGQotTtugpwTA.jpg" width="600"/>
+   <img alt="A serene beach scene with waves gently crashing on the shore" height="400" src="https://storage.googleapis.com/a1aa/image/cOD0fqO4eim4mE136rzGidSzfS767dYf7bUqKnr8KVqWBmCPB.jpg" width="600"/>
+   <img alt="A candid moment of a couple laughing together" height="400" src="https://storage.googleapis.com/a1aa/image/OLmfwXGbFpXHJ6I8tijlvZv2abFL2EDK4iyr6NCH5PQTwU4JA.jpg" width="600"/>
+   <img alt="A detailed macro shot of a colorful butterfly on a flower" height="400" src="https://storage.googleapis.com/a1aa/image/YzZp0BxnDv6lJ1AcZgwV8G4CpH9Vhz8bGDZOlZ6ifdzPwU4JA.jpg" width="600"/>
+   <img alt="A dynamic action shot of a sports event" height="400" src="https://storage.googleapis.com/a1aa/image/5DfJ1q0ViOSpeUMsIIx0GVqfUZ3P3Qt8yQYXLECEG4SEBThnA.jpg" width="600"/>
+   <img alt="A peaceful forest path with sunlight filtering through trees" height="400" src="https://storage.googleapis.com/a1aa/image/kz6AnFPjVOaXF91LjOGAf30pzZfnKo8vFRapYVAxwuqdgpwTA.jpg" width="600"/>
+   <img alt="A dramatic black and white portrait of an elderly person" height="400" src="https://storage.googleapis.com/a1aa/image/1xsgJl8fL5QMLaZZXj9jBYPDuMq9QYbNEAIoN4EHt9rSwU4JA.jpg" width="600"/>
+   <img alt="A festive event with people dancing and celebrating" height="400" src="https://storage.googleapis.com/a1aa/image/glfGAGjfBVl3SUiRhlQLjbvsQjFhFt6gkKtLZtEi9UeIBThnA.jpg" width="600"/>
+   <img alt="A stunning architectural shot of a modern building" height="400" src="https://storage.googleapis.com/a1aa/image/Y2P6YDIGwXLWLRqWGVORhjhLGTzXMBCsTWwjf9NGlkJOwU4JA.jpg" width="600"/>
+   <img alt="A beautiful wildlife scene with animals in their natural habitat" height="400" src="https://storage.googleapis.com/a1aa/image/H3MwODyWMw6WLJJfAqkVe0M4DzbAT1fSrIeGUZmBNnehFMFeE.jpg" width="600"/>
+   <img alt="A creative abstract photo with vibrant colors and shapes" height="400" src="https://storage.googleapis.com/a1aa/image/Np4qXk5ij77PN5e2o8sMR7aGtRLjh55iqI89lLPb1hQMwU4JA.jpg" width="600"/>
+   <img alt="A tranquil lake scene with mountains in the background" height="400" src="https://storage.googleapis.com/a1aa/image/Rp9jelmVHpWTS6Ps0BQtketLdZCf67nW1GdOFyyJy5o0AThnA.jpg" width="600"/>
+   <img alt="A joyful moment of children playing in a park" height="400" src="https://storage.googleapis.com/a1aa/image/OKSOYp7Bu85kMVojKSletlgElSgNi7kF7HffNG2NMUKQBThnA.jpg" width="600"/>
+  </div>
+  <div class="about" id="about">
+   <h2>
+    About the Artist
+   </h2>
+   <img alt="Photographer in action capturing a moment" height="400" src="https://storage.googleapis.com/a1aa/image/BItfhVYnu8XbHiLn0OklXDTty2fcLKmkN5J7AQSUfkKVBThnA.jpg" width="600"/>
+   <p>
+    Hello! I'm [Your Name], a passionate photographer with a love for capturing the beauty of the world. My journey began [X] years ago, and since then, I've been fortunate to work on numerous projects that have taken me to incredible places and introduced me to amazing people. Through my lens, I strive to tell stories and evoke emotions, creating lasting memories for my clients and viewers.
+   </p>
+   <h3>
+    Milestones
+   </h3>
+   <p>
+    2010: Started my photography journey
+   </p>
+   <p>
+    2012: First solo exhibition
+   </p>
+   <p>
+    2015: Published my first photo book
+   </p>
+   <p>
+    2018: Awarded Photographer of the Year
+   </p>
+   <p>
+    2020: Launched my online portfolio
+   </p>
+   <h3>
+    Fun Facts
+   </h3>
+   <p>
+    Favorite Camera: Canon EOS R5
+   </p>
+   <p>
+    Most Memorable Shoot: Capturing the Northern Lights in Iceland
+   </p>
+   <p>
+    Personal Motto: "Every picture tells a story."
+   </p>
+  </div>
+  <div class="services" id="services">
+   <h2>
+    Photography Services
+   </h2>
+   <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+    <div>
+     <img alt="Portrait session example with a person posing in a studio" height="400" src="https://storage.googleapis.com/a1aa/image/wJt5kP0DUeVCHakEIQkSu9QWhokEZ0a0sKPER22VsteXgpwTA.jpg" width="600"/>
+     <h3>
+      Portrait Sessions
+     </h3>
+     <p>
+      Capture your personality and essence with a professional portrait session. Perfect for individuals, couples, and families.
+     </p>
+    </div>
+    <div>
+     <img alt="Event photography example with people celebrating at a party" height="400" src="https://storage.googleapis.com/a1aa/image/HDBVx7lU5V50OlFCegjbfXiPzf8BVjHxNiSjh5S3R5PyAThnA.jpg" width="600"/>
+     <h3>
+      Event Photography
+     </h3>
+     <p>
+      Document your special events with stunning photos that capture the atmosphere and emotions of the day.
+     </p>
+    </div>
+    <div>
+     <img alt="Print sales example with framed photos on a wall" height="400" src="https://storage.googleapis.com/a1aa/image/NAtExGNZv1pBHFxYJfBDrrhGRjH4bsQ53NsRmpSCfRmggpwTA.jpg" width="600"/>
+     <h3>
+      Print Sales
+     </h3>
+     <p>
+      Purchase high-quality prints of my work to decorate your home or office. Available in various sizes and formats.
+     </p>
+    </div>
+   </div>
+   <button class="mt-10 px-6 py-3 bg-gray-800 text-white rounded hover:bg-gray-600 transition">
+    Schedule a Session
+   </button>
+  </div>
+  <div class="contact" id="contact">
+   <h2>
+    Reach Out
+   </h2>
+   <form>
+    <input class="border p-2 w-full mb-4" name="name" placeholder="Your Name" required="" type="text"/>
+    <input class="border p-2 w-full mb-4" name="email" placeholder="Your Email" required="" type="email"/>
+    <textarea class="border p-2 w-full mb-4" name="message" placeholder="Your Message" required="" rows="5"></textarea>
+    <button class="px-6 py-3 bg-gray-800 text-white rounded hover:bg-gray-600 transition" type="submit">
+     Send Message
+    </button>
+   </form>
+  </div>
+  <div class="footer">
+   <p>
+    © 2023 Through My Lens. All rights reserved.
+   </p>
+   <a href="https://www.facebook.com" target="_blank">
+    <i class="fab fa-facebook-f">
+    </i>
+   </a>
+   <a href="https://www.instagram.com" target="_blank">
+    <i class="fab fa-instagram">
+    </i>
+   </a>
+  </div>
+ </body>
+</html>
